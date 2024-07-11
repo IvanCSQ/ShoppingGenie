@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2024-07-08
+  amount: 1.5
+  establishment: MyString
+  category: MyString
+  items: 
+  tags: MyString
+  user: one
+
+two:
+  date: 2024-07-08
+  amount: 1.5
+  establishment: MyString
+  category: MyString
+  items: 
+  tags: MyString
+  user: two

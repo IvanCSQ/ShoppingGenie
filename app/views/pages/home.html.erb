@@ -2,6 +2,22 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 
 <div>
+
+  <%= form_with url: expense_path, method: :post, local: true do |form| %>
+    <div>
+      <%= form.label :prompt %>
+      <%= form.text_area :prompt, rows: 5, cols: 50 %>
+    </div>
+
+    <div>
+      <%= form.submit "Ask AI to add expense" %>
+    </div>
+  <% end %>
+
+</div>
+
+<br>
+<div>
   <button><a href="<%= new_user_session_path %>">sign in</a></button>
   <button><a href="<%= destroy_user_session_path %>" data-turbo-method="delete">Log out</a></button>
   <button><a href="<%= new_user_registration_path %>">sign up</a></button>
